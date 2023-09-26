@@ -12,8 +12,8 @@ RUN /bin/sh -c set -euxo pipefail; \
     :
 
 FROM base as prod
-ARG BUILD_DATE
 LABEL org.opencontainers.image.authors="Marvin Gravert"
 WORKDIR /app
-COPY main.py /src ./
+COPY main.py ./
+COPY /src ./src
 CMD ["python", "main.py"]
