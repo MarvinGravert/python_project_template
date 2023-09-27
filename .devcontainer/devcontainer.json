@@ -52,7 +52,7 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "/bin/sh post_install.sh",
+	"postCreateCommand": "/bin/bash .devcontainer/post_install.sh",
 
 	// Configure tool-specific properties.
 	// "customizations": {},
